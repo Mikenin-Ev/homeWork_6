@@ -66,5 +66,6 @@ public class Main {
             numbersProduct = i * growth;
             System.out.println("2 * " + i + " = " + numbersProduct);
         }
+
     }
 }
