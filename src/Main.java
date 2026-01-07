@@ -45,15 +45,16 @@ public class Main {
         System.out.println(" ");
 
         System.out.println("Задача № 8");
-        int freeMoney = 29000;
-        for (int i = 1, moneyContribution = 0; i <= 12; i++){
+       for (int i = 1, moneyContribution = 0, freeMoney = 29000; i <= 12; i++){
             moneyContribution = moneyContribution + freeMoney;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + moneyContribution + " рублей");
         }
         System.out.println(" ");
 
         System.out.println("Задача № 9");
-         for (int i = 1, moneyContribution = 0; i <= 12; i++){
+        float freeMoney = 29000f;
+        float moneyContribution = 0f;
+         for (int i = 1; i <= 12; i++){
             moneyContribution = moneyContribution + freeMoney + moneyContribution / 100;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + moneyContribution + " рублей");
         }
