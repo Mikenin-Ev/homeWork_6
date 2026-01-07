@@ -15,7 +15,7 @@ public class Main {
         System.out.println(" ");
 
         System.out.println("Задача № 3");
-        for (int i = 0 + 2; i <= 17; i = i + 2){
+        for (int i = 0; i <= 17; i += 2){
             System.out.println(i);
         }
         System.out.println(" ");
@@ -27,13 +27,13 @@ public class Main {
         System.out.println(" ");
 
         System.out.println("Задача № 5");
-        for (int i = 1904; i <= 2096; i = i + 4){
+        for (int i = 1904; i <= 2096; i += 4){
             System.out.println(i + " год является високосным...");
         }
         System.out.println(" ");
 
         System.out.println("Задача № 6");
-        for (int i = 7; i <= 98; i = i + 7){
+        for (int i = 7; i <= 98; i += 7){
             System.out.println(i);
         }
         System.out.println(" ");
@@ -45,18 +45,22 @@ public class Main {
         System.out.println(" ");
 
         System.out.println("Задача № 8");
-        int freeMoney = 29000;
-        for (int i = 1, moneyContribution = 0; i <= 12; i++){
+       for (int i = 1, moneyContribution = 0, freeMoney = 29000; i <= 12; i++){
             moneyContribution = moneyContribution + freeMoney;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + moneyContribution + " рублей");
         }
         System.out.println(" ");
 
         System.out.println("Задача № 9");
-         for (int i = 1, moneyContribution = 0; i <= 12; i++){
-            moneyContribution = moneyContribution + freeMoney + moneyContribution / 100;
+        float freeMoney = 29000f;
+        float moneyContribution = 0f;
+         for (int i = 1; i <= 12; i++){
+            moneyContribution = moneyContribution + moneyContribution / 100;
+            moneyContribution = moneyContribution + freeMoney;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + moneyContribution + " рублей");
         }
+        moneyContribution = moneyContribution + moneyContribution / 100;
+        System.out.println(moneyContribution);
         System.out.println(" ");
 
         System.out.println("Задача № 10");
