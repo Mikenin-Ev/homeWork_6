@@ -55,9 +55,12 @@ public class Main {
         float freeMoney = 29000f;
         float moneyContribution = 0f;
          for (int i = 1; i <= 12; i++){
-            moneyContribution = moneyContribution + freeMoney + moneyContribution / 100;
+            moneyContribution = moneyContribution + moneyContribution / 100;
+            moneyContribution = moneyContribution + freeMoney;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + moneyContribution + " рублей");
         }
+        moneyContribution = moneyContribution + moneyContribution / 100;
+        System.out.println(moneyContribution);
         System.out.println(" ");
 
         System.out.println("Задача № 10");
